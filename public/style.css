@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #234780;
+    display: flex;
+    justify-content: space-between;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+aside {
+    height: 100dvh;
+    background-color: #27364d;
+    width: 25%;
+    box-shadow: 0 0 10px 3px #27364d;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-header {
+    height: 10dvh;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #234780;
+}
+
+.aside-main {
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    padding-top: 1dvh;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.div-aside {
+    display: flex;
+    height: 8dvh;
+    justify-content: start;
+    padding-left: 3dvh;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-aside:hover {
+    background-color: #435c838b;
+    border-radius: 2rem;
+    box-shadow: 0 0 3px 1px #eee;
+}
+
+.div-aside.active {
+    background-color: #435c838b;
+    border-radius: 2rem;
+    box-shadow: 0 0 3px 1px #234780;
+}
+
+.div-aside i {
+    font-size: 2rem;
+    color: #eee;
+    font-weight: bold;
+}
+
+.div-aside a {
+    font-size: 2rem;
+    color: #eee;
+}
+
+.container-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 5vh; */
+    height: 100dvh;
+    gap: 5vh;
+    padding-right: 33vh;
+    margin-top: -7dvh;
+}
+
+.container-add p {
+    font-size: 5rem;
+    color: #eee;
+    font-weight: bold;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-task {
+    width: 8.5dvw;
+    height: 5dvh;
+    padding: 5px;
+    border-radius: 20px 0 0 20px;
+    background-color: #eee;
+    box-shadow: 0 0 6px 2px #eee;
+    border: none;
+    color: #0062ff;
+    margin-top: 3dvh;
+    font-weight: bold;
+    margin-left: 23dvh;
+    outline: none;
+}
+
+.input-task {
+    width: 40dvw;
+    height: 6dvh;
+    padding: 15px;
+    background: none;
+    box-shadow: 0 0 8px 3px #eee;
+    border: none;
+    color: #eee;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    font-size: 2rem;
+}
+
+.button-task {
+    width: 8.5dvw;
+    height: 5dvh;
+    padding: 5px;
+    border-radius: 0 20px 20px 0px;
+    background-color: #eee;
+    box-shadow: 0 0 6px 2px #eee;
+    border: none;
+    color: #0062ff;
+    font-weight: bold;
+    outline: none;
+}
+
+.date-task:hover {
+    background-color: #6ca4ff4e;
+    color: #eee;
+}
+
+.button-task:hover {
+    background-color: #6ca4ff4e;
+    color: #eee;
+}
+
+.input-task:hover {
+    background-color: #eee;
+    color: #0062ff;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 120%;
+    background-color: #27364d;
+    height: 60dvh;
+    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+    scrollbar-color: #0062ff #27364d;
+    box-shadow: 0 0 10px 3px #27364d;
+    border-radius: 2rem;
+}
+
+.task-list {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 2dvh 2.5dvw;
+    border-bottom: 1px solid #eeeeee6e;
+    border-radius: 2rem;
+}
+
+.task-list:hover {
+    background-color: #445f83;
+    border-radius: 2rem;
+}
+
+.task-list li {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.task-list button {
+    width: 8dvw;
+    height: 3dvh;
+    background-color: #8f0000;
+    color: #eee;
+    box-shadow: 0 0 5px 1px #eee;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+
+.task-list button:hover {
+    background-color: #1f4e00;
+}
+
+.date {
+    color: #6ca4ff;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.refresh-container {
+    display: flex;
+    justify-content: end;
+    padding: 3rem;
+}
+
+.refresh {
+    width: 8dvw;
+    height: 4dvh;
+    border: none;
+    border-radius: 50rem;
+    background-color: #27364d;
+    color: #eee;
+    font-weight: bold;
+    box-shadow: 0 0 3px 1px #27364d;
+}
+
+.refresh:hover {
+    box-shadow: 0 0 8px 3px #eee;
+}
+
+.complete {
+    text-decoration: line-through;
+    text-decoration-color: #eee;
+    background-color: #1f4e0090;
+}
+
+.complete button {
+    background-color: #1f4e00;
+}

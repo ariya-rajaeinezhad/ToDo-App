@@ -1,0 +1,25 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "My Full-Stack To-Do App",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^9.9.1",
+    "mssql": "^12.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
